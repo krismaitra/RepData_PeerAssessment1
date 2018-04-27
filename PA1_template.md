@@ -26,7 +26,7 @@ We first unzip the file available in our working directory and read it into a va
 
 ```r
 csvfile <- unzip("activity.zip")
-data <- read.csv(csvfile)
+data <- read.csv(csvfile, header = TRUE)
 ```
 
 Next we take a look at the data in the file:

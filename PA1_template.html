@@ -131,7 +131,7 @@ $(document).ready(function () {
 <p>The data can also be downloaded from <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">here</a>.</p>
 <p>We first unzip the file available in our working directory and read it into a variable as follows:</p>
 <pre class="r"><code>csvfile &lt;- unzip(&quot;activity.zip&quot;)
-data &lt;- read.csv(csvfile)</code></pre>
+data &lt;- read.csv(csvfile, header = TRUE)</code></pre>
 <p>Next we take a look at the data in the file:</p>
 <pre class="r"><code>dim(data)</code></pre>
 <pre><code>## [1] 17568     3</code></pre>
